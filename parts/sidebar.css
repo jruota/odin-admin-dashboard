@@ -1,0 +1,76 @@
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, max-content));
+    margin: 0;
+}
+
+aside {
+    background-color: #1992d4;
+    color: white;
+    font-weight: 900;
+    padding: 2rem;
+}
+
+.sidebar-heading {
+    display: grid;
+    grid-template-columns: minmax(5rem, max-content) 1fr;
+    grid-template-rows: repeat(2, minmax(5rem, max-content));
+    align-items: center;
+}
+
+[class^="sidebar-part"] {
+    display: grid;
+    grid-template-columns: minmax(5rem, max-content) 1fr;
+    align-items: center;
+}
+
+.sidebar-part-one {
+    grid-template-rows: repeat(7, minmax(5rem, max-content));
+}
+
+.sidebar-part-two {
+    grid-template-rows: repeat(3, minmax(5rem, max-content));
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 0 0 0 2rem;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 2.3rem;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-inline-start: 2rem;
+}
+
+/* images ################################################################### */
+
+img {
+    justify-self: center;
+}
+
+.sidebar-heading img {
+    width: 100%;
+    height: 100%;
+}
+
+[class^="sidebar-part"] img {
+    width: 50%;
+    height: 50%;
+}
